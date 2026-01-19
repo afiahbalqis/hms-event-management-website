@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL FONT */
+
+h1, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: #544e4e;
+}
+
+body,
+a, li, span, label, input, textarea, button {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+p{
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    background-color: #89986D;
+    padding: 15px 30px;
+    overflow: hidden;
+}
+
+/* Logo */
+.header img {
+    height: 100px;
+    float: left;
+}
+
+/* Navigation */
+.header-right {
+    float: right;
+    margin-top: 20px;
+}
+
+.header-right a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.header-right a:hover {
+    color: #0D4715;
+}
+
+/* Page title */
+.header h1 {
+    clear: both;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15px;
+    font-size: 28px;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* HERO SECTION */
+.hero-section {
+    min-height: 80vh;              
+    background-image: url("../images/white-wedding.jpeg");
+    background-size: cover;      
+    background-position: center;   
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+}
+
+/* Overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;                    
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/*GENERAL SECTION */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/*ABOUT PAGE*/
+.about-hero {
+    min-height: 80vh;
+    background-image: url("../images/white-wedding.jpeg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.about-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about-overlay .container {
+    transform: translateY(10px);
+}
+
+.About-Us {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.about-hero p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.about-page {
+    background-color: #f6f8f5;
+    padding: 100px 40px;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.about-text p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-tagline {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #ffffff;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.about-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    margin-top: 20px;
+}
+
+/*CARDS*/
+.card {
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.cta-section {
+    background-color: #8b6b3d;
+    color: #ffffff;
+}
+
+@media (max-width: 900px) {
+    .about-row,
+    .about-row.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header img {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    .header-right {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .header-right a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .hero-section {
+        height: 60vh;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+}
+
+/*SERVICES PAGE*/
+.services-hero {
+    min-height: 80vh;              
+    background-image: url("../images/white-wedding.jpeg");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+}
+
+.services-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column; 
+    padding: 60px 20px; 
+}
+.services-overlay p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 5px;  
+    line-height: 1.8;  
+}
+
+.services-hero p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/*SERVICES TITLE*/
+.services-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.about-text p,
+.intro-text {
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 14px;
+    color: #333333; 
+    text-align: justify !important;
+    text-justify: inter-word
+}
+
+.about-text {
+    max-width: 560px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color:  #0D4715;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 35px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.cta {
+    text-align: center;
+}
+
+.intro-text {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.about-page {
+    padding: 80px 0;
+}
+
+.about-page {
+    background-color: #ffffff; 
+    padding: 40px 20px;       
+}
+
+.about-row {
+    display: flex;
+    align-items: flex-start;  
+    gap: 30px;                 
+    margin-bottom: 50px;       
+}
+
+.about-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;          
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 550px;           
+}
+
+.about-text h2 {
+    margin-top: 0px;           
+    margin-bottom: 10px;       
+}
+
+.about-text p {
+    margin-bottom: 12px;       
+    line-height: 1.55;         
+}
+
+/* PACKAGE TITLE */
+.package-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+/* PACKAGES SECTION */
+.minimal-packages {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.package-card {
+    background-color: #fafafa;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.package-info {
+    padding: 25px;
+}
+
+.package-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.package-info p {
+    color: 492828;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.package-info ul {
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+
+.package-info ul li {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.package-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px 492828(0,0,0,0.12);
+}
+
+.package-card.featured {
+    background-color: #f3f3f3;
+}
+
+.text-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.text-link:hover {
+    border-color: #000;
+}
+
+/*CANOPY*/
+.canopy-options {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+}
+
+.canopy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.canopy-card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.canopy-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.canopy-card h3 {
+    margin: 20px 0 10px;
+    font-size: 20px;
+}
+
+.canopy-card p {
+    padding: 0 20px 25px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.canopy-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.12);
+}
+
+
+/* GALLERY TITLE */
+.gallery-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    color: #302a2a;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+/* CONTACT TITLE */
+.contact-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    color: #2e2e2e;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+/* BOOKING FORM*/
+.booking-form {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    outline: none;
+    border-color: #8b6b3d;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background-color: #C5D89D; 
+    color: #272121;
+    border: 2px solid #C5D89D; 
+    padding: 14px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.btn:hover {
+    background-color: #9CAB84; 
+    border-color: #9CAB84;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* WHATSAPP */
+.whatsapp-box {
+    margin-top: 40px;
+    text-align: center;
+    background-color: #f0f8f5; 
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.whatsapp-box p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.whatsapp-box .btn {
+    width: auto;
+    padding: 12px 30px;
+    border-radius: 6px;
+    border: 2px solid #C5D89D;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.whatsapp-box .btn:hover {
+    background-color: #9CAB84;
+    border-color: #9CAB84;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+
+    .about-page h1 {
+        font-size: 26px;
+    }
+
+    .booking-form {
+        padding: 30px 20px;
+    }
+}
+
+/*FOOTER*/
+footer {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+footer p,
+footer a,
+footer span,
+footer i {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #dddddd;
+}
+
+
+
+
+
